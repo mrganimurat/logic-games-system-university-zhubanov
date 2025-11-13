@@ -176,7 +176,7 @@ class GameFrame(tk.Frame):
             "opened": list(self.opened),
             "flags": list(self.flags),
         }
-        os.makedirs("data", exist_ok=True)
+        os.makedirs("games/data", exist_ok=True)
         with open(SAVE_FILE, "w", encoding="utf-8") as f:
             json.dump(state, f)
 
